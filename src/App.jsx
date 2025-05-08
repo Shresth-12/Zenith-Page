@@ -1,6 +1,7 @@
 import link from './assets/link.png'
 import logo from './assets/logo.png'
 import screen from "./assets/screen.png"
+import Footer from './components/footer'
 function App() {
 
   return (
@@ -78,6 +79,7 @@ function App() {
           <img src={screen} alt="" />
           </div>
         </div>
+        <Footer/>
     </div>
   )
 }
