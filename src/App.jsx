@@ -14,7 +14,7 @@ function Home() {
         <div className='text-[#FF926A] text-[69px] font-[500] opacity-25 md:text-[120px] md:font-[800]'>
           Our Work
         </div>
-        <div className="text-[#FE5416] md:text-[64px] absolute inset-0 flex items-center justify-center z-10  mb-[520px]  md:mb-[500px] md:font-[600] text-[40px] font-[500] ">
+        <div className="text-[#FE5416] md:text-[64px] absolute inset-0 flex items-center justify-center z-10  mb-[520px]  md:mb-[500px] md:font-[600] text-[40px] font-[500]">
           Projects
         </div>
       </div>
@@ -23,11 +23,16 @@ function Home() {
           <div className="text-white md:font-[400] md:text-[34px] flex md:gap-80 text-[20px] font-[700] gap-60">
             RaceCraft
             <div className="relative group pt-2 cursor-pointer w-fit">
-              <img src={link} alt="" className='md:w-[36px] md:h-[36px] w-[26px] h-[26px]' />
-              <div className="absolute left-[-250%] top-1/2 -translate-y-1/2 text-white bg-[#FE5416] text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
-                Open Link
-              </div>
-            </div>
+  <img
+    src={link}
+    alt=""
+    className="md:w-[36px] md:h-[36px] w-[26px] h-[26px]"
+  />
+  <div className="hidden md:block absolute left-[-250%] top-full mt-2 text-[#FE5416] bg-white/80 text-xs px-3 py-1 rounded-lg shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+    https://example.com
+  </div>
+</div>
+
           </div>
           <div className='bg-white w-fit h-fit text-black mt-4 md:px-2 rounded-2xl md:py-1 text-[12px] md:text-[16px] px-4'>
             Automobile
@@ -55,8 +60,8 @@ function Home() {
               </div>
             ))}
           </div>
-          <div className='pt-10 flex gap-8'>
-            <img src={logo} alt="" className='md:w-[100px] md:h-[100px] rounded-full w-[60px] h-[60px]' />
+          <div className='pt-15 flex gap-8'>
+            <img src={logo} alt="" className='md:w-[70px] md:h-[70px] rounded-full w-[60px] h-[60px]' />
             <div className='md:text-[20px] text-[16px] font-[400] text-white md:pt-4 pt-2'>
               Vamshi <br /> Founder & CEO
             </div>

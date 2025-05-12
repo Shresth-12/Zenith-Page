@@ -113,7 +113,7 @@ const Footer = () => {
           </div>
           {/* Address */}
           <div className="flex flex-col items-center md:items-end">
-  <h3 className="text-4xl md:text-2xl mb-4 md:mr-68 dm-sans-font text-center md:text-left">
+  <h3 className="text-4xl md:text-2xl mb-4 md:mr-64 dm-sans-font text-center md:text-left">
     Find us at
   </h3>
   <p className="text-base text-center md:text-left md:w-[25vw]">
@@ -121,13 +121,14 @@ const Footer = () => {
     Enclave, Venkatagiri, Jubilee Hills, Hyderabad, Telangana 500033
   </p>
   <iframe
-    title="Zenith Studio Location"
-    className="w-full md:w-[25vw] h-48 rounded-4xl border-0  pt-4"
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.3591038227894!2d78.40561807515508!3d17.439024601015107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9739b26b313b%3A0xdf3c2b5a9a2f7b59!2sBabukhan%20Rasheed%20Plaza!5e0!3m2!1sen!2sin!4v1689917098809!5m2!1sen!2sin"
-    allowFullScreen=""
-    loading="lazy"
-    referrerPolicy="no-referrer-when-downgrade"
-  ></iframe>
+  title="Zenith Studio Location"
+  className="w-full md:w-[22vw] h-48 rounded-xl border-0 mt-4 md:mr-10"
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.017118850811!2d78.4010821!3d17.4366945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9145d8918209%3A0xe96031c98b92b704!2sRENT%20A%20DESK!5e0!3m2!1sen!2sin!4v1715530798000!5m2!1sen!2sin"
+  allowFullScreen=""
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+/>
+
 </div>
 
         </div>
@@ -138,15 +139,15 @@ const Footer = () => {
             © ZENITH Studio / All Rights Reserved.
           </div>
           <div className="flex space-x-4">
-            <Link to="#" className="hover:text-[#FE5416]">
-              Cookies
-            </Link>
-            <Link to="#" className="hover:text-[#FE5416]">
-              Privacy Policy
-            </Link>
-            <Link to="#" className="hover:text-[#FE5416]">
-              Terms of service
-            </Link>
+          <a href="/cookie" className="hover:text-[#FE5416]">
+      Cookies
+    </a>
+    <a href="/privacy" className="hover:text-[#FE5416]">
+      Privacy Policy
+    </a>
+    <a href="/terms" className="hover:text-[#FE5416]">
+      Terms of service
+    </a>
           </div>
         </div>
       </div>

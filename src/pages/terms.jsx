@@ -10,10 +10,18 @@ export function Terms() {
         <NavBar />
       </div>
       <div className="md:flex md:font-[700] md:text-[36px] md:pt-80 text-white md:pl-40 md:gap-48 font-[700] text-[20px] pt-36 pl-6">
-        <span className="md:block hidden">Privacy Policy</span> 
-        <span className="text-[#FE5416]">Terms Of Services</span>
-         <span className="md:block hidden">Cookie Policy</span>
-      </div>
+  <a href="/privacy" className="md:block hidden cursor-pointer">
+    <span>Privacy Policy</span>
+  </a>
+  <a href="/terms" className="text-[#FE5416] cursor-pointer">
+    <span>Terms Of Services</span>
+  </a>
+  <a href="/cookie" className="md:block hidden cursor-pointer">
+    <span>Cookie Policy</span>
+  </a>
+</div>
+
+
       <div className="md:mt-40 mt-10">
         <Box
           title="1. Introduction"

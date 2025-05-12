@@ -10,10 +10,17 @@ export function Cookie() {
         <NavBar />
       </div>
       <div className="md:flex md:font-[700] md:text-[36px] md:pt-80 text-white md:pl-40 md:gap-48 font-[700] text-[20px] pt-36 pl-6">
-        <span className=" md:block hidden">Privacy Policy</span> 
-        <span className="md:block hidden">Terms Of Services</span>
-         <span className="text-[#FE5416]">Cookie Policy</span>
-      </div>
+  <a href="/privacy" className="md:block hidden cursor-pointer">
+    <span>Privacy Policy</span>
+  </a>
+  <a href="/terms" className="md:block hidden cursor-pointer">
+    <span>Terms Of Services</span>
+  </a>
+  <a href="/cookie" className="text-[#FE5416] cursor-pointer">
+    <span>Cookie Policy</span>
+  </a>
+</div>
+
       <div className="md:mt-40 text-white md:font-[400] md:text-[24px] md:pl-28 font-[400] text-[14px] pl-6 pt-8">
       Zenith Studio uses cookies on our website, www.zenithstudio.in, to enhance your experience while exploring our web services.
       </div>
