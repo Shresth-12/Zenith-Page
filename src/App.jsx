@@ -6,6 +6,8 @@ import Footer from './components/footer'
 import { Terms } from './pages/terms'
 import { Privacy } from './pages/privacy'
 import { Cookie } from './pages/cookie'
+import ServicesPage from './pages/services'
+import HomePage from './pages/Home'
 
 function Home() {
   return (
@@ -62,7 +64,7 @@ function Home() {
           </div>
           <div className='pt-15 flex gap-8'>
             <img src={logo} alt="" className='md:w-[70px] md:h-[70px] rounded-full w-[60px] h-[60px]' />
-            <div className='md:text-[20px] text-[16px] font-[400] text-white md:pt-4 pt-2'>
+            <div className='md:text-[20px] text-[16px] font-[400] text-white md:pt-1'>
               Vamshi <br /> Founder & CEO
             </div>
           </div>
@@ -83,6 +85,9 @@ function App() {
         <Route path="/terms" element={<Terms/>} />
         <Route path="/privacy" element={<Privacy/>} />
         <Route path="/cookie" element={<Cookie/>} />
+        <Route path="/service" element={<ServicesPage/>} />
+        <Route path="/home" element={<HomePage/>} />
+
       </Routes>
   )
 }

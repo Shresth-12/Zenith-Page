@@ -1,0 +1,62 @@
+.home-about-style {
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+.about-style {
+    min-width: 100vw;
+    max-width: 100vw;
+}
+
+
+.mission-cards {
+    box-shadow:
+        rgba(254, 84, 22, 0.25) 0px 50px 100px -20px,
+        rgba(254, 84, 22, 0.3) 0px 30px 60px -30px,
+        rgba(254, 84, 22, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+.team-about-img {
+     /* For a 300px wide container, the arch portion must be 150px tall. */
+  width: 400px;
+  height: 600px; /* or anything >= 150px of extra space for the rectangle portion */
+  
+  /* Top corners = 150px each if width = 300px */
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  
+  overflow: hidden; /* so content fits inside the arch shape */
+}
+
+@media screen and (max-width:480px) {
+  .team-about-img{
+    width:80vw;
+    height:50vh;
+  }
+}
+
+
+@keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 1s ease-out forwards;
+  }
+  
+  @keyframes ping {
+    75%, 100% {
+      transform: scale(1.7);
+      opacity: 0;
+    }
+  }

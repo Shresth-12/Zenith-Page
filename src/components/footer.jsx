@@ -17,7 +17,7 @@ const Footer = () => {
                 alt="zenith logo"
               />
             </Link>
-            <div className="text-base text-center md:text-left">
+            <div className="text-base text-center md:text-left md:pt-4">
               <h3 className="mb-2 md:font-semibold">Contact Info</h3>
               <p>Email: business@zenithstudio.in</p>
             </div>
